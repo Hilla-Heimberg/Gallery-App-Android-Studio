@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Gallery</string>
+    <string name="gallery_item">galleryItem</string>
+    <string name="permission_explanation">Cannot show images without permission!</string>
+    <string name="load_my_pictures">Load my pictures</string>
+    <string name="general_error">An error has occurred while fetching images.</string>
+    <string name="network_call_error">Cannot fetch images from the internet.</string>
+    <string name="no_internet_connection">No internet connection.</string>
+
+    <string-array name="images_source_array">
+        <item> <b> \t Your photos </b> </item>
+        <item> <b> \t Unsplash photos </b> </item>
+    </string-array>
+</resources>

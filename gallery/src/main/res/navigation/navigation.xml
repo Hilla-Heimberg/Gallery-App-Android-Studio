@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Here we have the navigation graph. You can create actions between fragments, add arguments, etc.-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/galleryFragment">
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.gallery.ui.GalleryFragment">
+        <action
+            android:id="@+id/action_galleryFragment_to_galleryImageFragment"
+            app:destination="@id/galleryImageFragment">
+            <argument
+                android:name="galleryItem"
+                app:argType="string" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/galleryImageFragment"
+        android:name="com.example.gallery.ui.GalleryImageFragment">
+        <action
+            android:id="@+id/action_galleryImageFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+        <argument
+            android:name="galleryItem"
+            app:argType="string" />
+    </fragment>
+</navigation>
